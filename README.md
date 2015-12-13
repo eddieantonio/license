@@ -1,4 +1,4 @@
-**license** 
+# license
 
 Places a LICENSE in the current directory.
 
@@ -18,7 +18,7 @@ See also `man license`.
 
 ## Recommended Usage
 
-Set the environment variable LICENSE_OWNER with your name in your
+Set the environment variable `LICENSE_OWNER` with your name in your
 shell's start-up script (i.e., `~/.bashrc` or `~/.zshrc` or what-have-you):
 
 ```sh
@@ -39,6 +39,14 @@ The full list of licenses can be found [here][liclist].
 [liclist]: https://github.com/github/choosealicense.com/tree/gh-pages/_licenses
 
 ## Quick Install
+
+On OS X:
+
+```sh
+brew tap eddieantonio/eddieantonio && brew install license
+```
+
+On everything else:
 
 ```sh
 curl -L https://github.com/eddieantonio/license/archive/master.tar.gz | tar xz && cd license-master/ && make install && cd .. && rm -rf license-master
