@@ -1,0 +1,51 @@
+.TH "LICENSE" "1" "December 13, 2015" "license" "license User Manual"
+.SH NAME
+.PP
+\f[B]license\f[] \- place a license in the current directory
+.SH SYNOPSIS
+.PP
+\f[B]license\f[] \f[I]license\f[] [\f[I]YEAR\f[] [\f[I]FULL
+NAME...\f[]]]
+.SH DESCRIPTION
+.PP
+\f[C]license\f[] places a file called \f[C]LICENSE\f[] in the current
+working directory, when given the name of an open source license, as
+listed by GitHub\[aq]s <http://choosealicense.com/>.
+Choose a license such as \f[C]mit\f[], \f[C]apache\-2.0\f[] or
+\f[C]gpl\-3.0\f[] and it will magically appear in the current working
+directory, with the current year and your name (see below).
+.PP
+See the full list of available licenses here (omit the \f[C]\&.txt\f[]):
+.PP
+<https://github.com/github/choosealicense.com/tree/gh-pages/_licenses>
+.PP
+If not specified on the command line (as the second argument), the year
+chosen will be the current year.
+.PP
+If not specified on the command line (as the third argument and
+onwards), the license owner will either be set to the environment
+variable \f[C]LICENSE_OWNER\f[], and or the logged\-in user\[aq]s name.
+.PP
+It is recommended to place this line in your shell\[aq]s start\-up
+script (e.g., \f[C]~/.bashrc\f[], \f[C]~/.zshrc\f[], etc.):
+.IP
+.nf
+\f[C]
+export\ LICENSE_OWNER="Insert\ your\ name\ here"
+\f[]
+.fi
+.SH ENVIRONMENT
+.TP
+.B \f[C]LICENSE_OWNER\f[]
+The default license owner name when not specified on the command line.
+.RS
+.RE
+.SH BUGS
+.PP
+See GitHub Issues: <https://github.com/eddieantonio/license/issues>
+.SH LICENSE
+.PP
+This script is, ironically enough, dedicated to the public domain.
+For details, see <http://unlicense.org/>.
+.PP
+Originally written by Eddie Antonio Santos <http://eddieantonio.ca>.
