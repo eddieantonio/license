@@ -1,7 +1,7 @@
-.TH "LICENSE" "1" "December 13, 2015" "license" "license User Manual"
+.TH "LICENSE" "1" "December 18, 2015" "" "license User Manual"
 .SH NAME
 .PP
-\f[B]license\f[] \- place a license in the current directory
+\f[B]license\f[] \[em] place a license in the current directory
 .SH SYNOPSIS
 .PP
 \f[B]license\f[] \f[I]license\f[] [\f[I]YEAR\f[] [\f[I]FULL
@@ -17,14 +17,15 @@ directory, with the current year and your name (see below).
 .PP
 See the full list of available licenses here (omit the \f[C]\&.txt\f[]):
 .PP
-<https://github.com/github/choosealicense.com/tree/gh-pages/_licenses>
+\ \ \ <https://github.com/github/choosealicense.com/tree/gh-pages/_licenses>
 .PP
-If not specified on the command line (as the second argument), the year
-chosen will be the current year.
+If not specified on the command line (as the second argument), the
+current year will be as the copyright year.
 .PP
 If not specified on the command line (as the third argument and
 onwards), the license owner will either be set to the environment
-variable \f[C]LICENSE_OWNER\f[], and or the logged\-in user\[aq]s name.
+variable \f[C]LICENSE_OWNER\f[] if set, or the logged\-in user\[aq]s
+name.
 .PP
 It is recommended to place this line in your shell\[aq]s start\-up
 script (e.g., \f[C]~/.bashrc\f[], \f[C]~/.zshrc\f[], etc.):
@@ -37,7 +38,7 @@ export\ LICENSE_OWNER="Insert\ your\ name\ here"
 .SH ENVIRONMENT
 .TP
 .B \f[C]LICENSE_OWNER\f[]
-The default license owner name when not specified on the command line.
+The default license owner name (if not specified on the command line).
 .RS
 .RE
 .SH BUGS

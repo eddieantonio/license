@@ -10,7 +10,8 @@ MAN1DIR=$(PREFIX)/share/man/man1
 BINDIR=$(PREFIX)/bin
 
 %.1: %.1.md
-	$(PANDOC) -sw man -Vdate='$(shell date +'%B %d, %Y')' $(PANDOCFLAGS) $< -o $@
+	$(PANDOC) -sw man -Vdate='$(shell date +'%B %d, %Y')' $(PANDOCFLAGS)\
+		$< -o $@
 
 install: $(SCRIPT) $(MANPAGE)
 	$(INSTALL) -d $(BINDIR) $(MAN1DIR)
